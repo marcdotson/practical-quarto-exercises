@@ -6,7 +6,7 @@ date: 2026-09-14
 masthead: _brand/brs-logo.svg
 release:
   period: "Q3 2026"
-  coverage: Oregon
+  region: Oregon
 format:
   html:
     template-partials:

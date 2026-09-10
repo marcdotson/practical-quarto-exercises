@@ -14,7 +14,7 @@ There is no snippet this time.
    ```yaml
    release:
      period: "Q3 2026"
-     coverage: Oregon
+     region: Oregon
      status: Provisional
    ```
 
@@ -64,6 +64,6 @@ why the default lives in the template and the value lives in the YAML.
 
 ## Optional extra, if you finish early
 
-Delete the `coverage:` line and render. The reference period line now ends in a
+Delete the `region:` line and render. The reference period line now ends in a
 separator with nothing after it. Fix it, so that the separator only shows when
 there is something on both sides of it.

@@ -1,4 +1,4 @@
-# Your turn 2: add the reference period
+# Your turn 2: add the period and region
 
 A statistical release reports on a period of time and an area. A reader must be
 able to see both without opening the tables.
@@ -9,7 +9,7 @@ start of the module:
 ```yaml
 release:
   period: "Q3 2026"
-  coverage: Oregon
+  region: Oregon
 ```
 
 Nothing shows them yet. The template has never asked for them.
@@ -24,7 +24,7 @@ Nothing shows them yet. The template has never asked for them.
    Each blank becomes a reference to one of the values above. To reach a key
    that sits inside another key, join the names with a dot.
 
-2. Render. The period and the coverage show below the subtitle.
+2. Render. The period and the region show below the subtitle.
 
 ## Notes
 
@@ -63,5 +63,5 @@ signs are what make Pandoc look the name up.
 
 ## To think about
 
-Delete the `coverage:` line from the YAML and render again. What do you get, and
+Delete the `region:` line from the YAML and render again. What do you get, and
 what would you rather have?
