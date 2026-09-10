@@ -3,7 +3,7 @@ title: "Regional Employment Indicators"
 subtitle: "Quarterly statistical release"
 author: "Bureau of Regional Statistics"
 date: 2026-09-14
-release:
+brs-release:
   period: "Q3 2026"
   region: Oregon
 format:

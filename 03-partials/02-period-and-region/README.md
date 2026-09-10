@@ -7,7 +7,7 @@ Both values are already in the YAML of `report.qmd`, and have been since the
 start of the module:
 
 ```yaml
-release:
+brs-release:
   period: "Q3 2026"
   region: Oregon
 ```
@@ -39,7 +39,7 @@ You are writing HTML here, not Markdown. That is why the separator is the
 character entity `&middot;` and not a typed `·`.
 
 The document now carries two times. Quarto formats `date` for you. It shows
-`release.period` exactly as you wrote it.
+`brs-release.period` exactly as you wrote it.
 
 ## If the output looks wrong
 

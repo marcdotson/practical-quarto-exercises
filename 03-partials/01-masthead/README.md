@@ -36,7 +36,7 @@ brand keys, so you write the path yourself.
 The class `report-masthead` does nothing yet. It is a hook for the style step at
 the end of this module.
 
-The YAML also holds a `release:` key that nothing shows. Leave it alone for now.
+The YAML also holds a `brs-release:` key that nothing shows. Leave it alone for now.
 Your document knows more than your template asks for.
 
 ## To think about

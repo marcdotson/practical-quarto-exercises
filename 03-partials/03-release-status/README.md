@@ -9,10 +9,10 @@ period are both in `title-block.html`.
 
 There is no snippet this time.
 
-1. Add a `status` key under `release:` in `report.qmd`:
+1. Add a `status` key under `brs-release:` in `report.qmd`:
 
    ```yaml
-   release:
+   brs-release:
      period: "Q3 2026"
      region: Oregon
      status: Provisional
@@ -27,7 +27,7 @@ There is no snippet this time.
 
    Two things must be true:
 
-   - When `release.status` is set, the badge shows that value.
+   - When `brs-release.status` is set, the badge shows that value.
    - When it is absent, the badge shows `Final`.
 
 3. Render. Then delete the `status:` line and render again. The badge must
@@ -46,7 +46,7 @@ The syntax reference is
 This is a reasonable thing to ask an assistant for. A prompt that works:
 
 > In my Quarto template partial `title-block.html`, add a status badge. Show the
-> `release.status` metadata value in a `<span class="report-status">` when it is
+> `brs-release.status` metadata value in a `<span class="report-status">` when it is
 > set, and show `Final` when it is not. Use Pandoc template syntax, like the
 > `$if(subtitle)$` block already in this file.
 
@@ -55,7 +55,7 @@ be asked to change it later.
 
 ## Notes
 
-`status` sits under `release:` rather than at the top level, for the reason from
+`status` sits under `brs-release:` rather than at the top level, for the reason from
 turn 2. One namespace, one bet.
 
 A conditional tests whether a key has a value. It does not compare values. There
