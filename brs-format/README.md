@@ -15,7 +15,7 @@ quarto add posit-conf-2026/practical-quarto-exercises/brs-format
 quarto add ../brs-format
 ```
 
-Then set the format:
+Then set the format, and nothing else:
 
 ```yaml
 format: brs-html
@@ -33,8 +33,14 @@ quarto use brand posit-conf-2026/practical-quarto-exercises/brs-brand
 _extensions/brs/
 ├── _extension.yml     title, version, and what the format contributes
 ├── title-block.html   the partial, after all four turns
-└── brs.scss           the styles for the classes it adds
+├── brs.scss           the styles for the classes it adds
+└── brs-logo.svg       the agency mark
 ```
+
+The logo ships with the format, and `_extension.yml` sets `masthead` to it, so
+a document does not have to name it. Quarto copies the file into the output
+and rewrites the path. A document can still set its own `masthead:` to
+override.
 
 `format: brs-html` names the extension `brs`, which contributes a format built
 on `html`. The directory has to be `_extensions/brs/` for that to resolve.
