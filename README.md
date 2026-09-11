@@ -32,5 +32,7 @@ folder and continue from a clean state.
 
 ## License
 
-See [LICENSE.md](LICENSE.md). Same license as the
+[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/),
+the same license as the
 [workshop materials](https://github.com/posit-conf-2026/practical-quarto).
+Full text in [LICENSE.md](LICENSE.md).
