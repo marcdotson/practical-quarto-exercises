@@ -21,11 +21,15 @@ Then set the format, and nothing else:
 format: brs-html
 ```
 
-The report still needs the brand for its colours and fonts:
+That is enough to render. Add the brand for the agency colours and fonts:
 
 ```bash
 quarto use brand posit-conf-2026/practical-quarto-exercises/brs-brand
 ```
+
+The styles use `$primary`, not `$brand-forest`, so the format works on its own
+— the badge comes out in Bootstrap's blue — and follows the brand when one is
+installed. Naming a colour by what it is *for* is what makes that work.
 
 ## What is in it
 

@@ -28,14 +28,15 @@
   margin-bottom: 0.75rem;
 }
 
-// Status pill. color-contrast() picks a readable foreground from the
-// brand background instead of hard-coding black or white.
+// Status pill. $primary rather than $brand-forest so the extension renders
+// without a brand installed, and follows the brand when there is one.
+// color-contrast() picks a readable foreground instead of hard-coding one.
 .report-status {
   display: inline-block;
   padding: 0.25em 0.75em;
   border-radius: 999px;
-  background-color: $brand-forest;
-  color: color-contrast($brand-forest);
+  background-color: $primary;
+  color: color-contrast($primary);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
