@@ -2,7 +2,7 @@
 
 Statistical releases are marked with their status. A first estimate is
 **Provisional**. A corrected estimate is **Revised**. A settled estimate is
-**Final**, and by convention a release with no mark at all is Final.
+**Final**. Not every release carries one.
 
 This folder holds the finished work of turn 2: the masthead and the reference
 period are both in `title-block.html`.
@@ -25,18 +25,15 @@ There is no snippet this time.
    <span class="report-status"></span>
    ```
 
-   Two things must be true:
+   Show it only when `brs-release.status` is set.
 
-   - When `brs-release.status` is set, the badge shows that value.
-   - When it is absent, the badge shows `Final`.
-
-3. Render. Then delete the `status:` line and render again. The badge must
-   change to `Final` on its own.
+3. Render. Then delete the `status:` line and render again. The badge should
+   disappear, leaving nothing behind.
 
 ## Where to look
 
-The file already contains five conditionals. They all test one value. Only one
-of them says what to do when that value is absent. Read that one, then adapt it.
+The file already contains five conditionals. Any of them is a model —
+`$if(subtitle)$` is the closest.
 
 The syntax reference is
 [Pandoc's template syntax](https://www.pandoc.org/MANUAL.html#template-syntax).
@@ -45,22 +42,21 @@ The syntax reference is
 
 This is a reasonable thing to ask an assistant for. A prompt that works:
 
-> In my Quarto template partial `title-block.html`, add a status badge. Show the
-> `brs-release.status` metadata value in a `<span class="report-status">` when it is
-> set, and show `Final` when it is not. Use Pandoc template syntax, like the
-> `$if(subtitle)$` block already in this file.
+> In my Quarto template partial `title-block.html`, show the
+> `brs-release.status` metadata value in a `<span class="report-status">`, but
+> only when it is set. Use Pandoc template syntax, like the `$if(subtitle)$`
+> block already in this file.
 
 Read what it gives you and make sure you can say what each line does. You will
 be asked to change it later.
 
 ## Notes
 
-`status` sits under `brs-release:` rather than at the top level, for the reason from
-turn 2. One namespace, one bet.
+`status` sits under `brs-release:` rather than at the top level, for the reason
+from turn 2. One namespace, one bet.
 
-A conditional tests whether a key has a value. It does not compare values. There
-is no way to write "if the status is Provisional" in a Pandoc template, which is
-why the default lives in the template and the value lives in the YAML.
+A conditional tests whether a key has a value. It does not compare values.
+There is no way to write "if the status is Provisional" in a Pandoc template.
 
 ## Optional extra, if you finish early
 

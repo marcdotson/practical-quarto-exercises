@@ -28,8 +28,8 @@ Nothing shows them yet. The template has never asked for them.
 
 ## Notes
 
-`release` is a name someone invented, and so is everything under it. Quarto has
-no `release` option, so nothing collides.
+`brs-release` is a name someone invented, and so is everything under it. Quarto has
+no `brs-release` option, so nothing collides.
 
 One nested key is safer than two top-level keys. Every top-level name you invent
 is a bet that Quarto will never claim that name. Nest under one key, and you
@@ -55,7 +55,7 @@ Blanks left alone show as themselves:
 A name without its dollar signs is text, not a reference:
 
 ```html
-<p class="report-period">release.period · Oregon</p>
+<p class="report-period">brs-release.period · Oregon</p>
 ```
 
 One half of that line was substituted and the other half was not. The dollar
