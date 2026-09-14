@@ -28,17 +28,9 @@ color:
   secondary: slate
 
 typography:
-  # Font family names must be valid CSS identifiers. Quarto writes the family
-  # into CSS unquoted, so a name that contains a bare number ("Source Sans 3")
-  # produces `font-family:Source Sans 3`, which every browser discards.
   fonts:
     - family: Atkinson Hyperlegible
       source: google
-      # Typst only embeds the faces listed here, so bold and italic need
-      # asking for. Quarto 1.11.4 drops the weight when the style is italic,
-      # so the bold-italic face never arrives even though Google serves it.
-      # An #emph inside a #strong therefore keeps the italic and loses the
-      # bold. Harmless here; nothing in these exercises needs both at once.
       weight: [400, 600, 700]
       style: [normal, italic]
     - family: Source Code Pro

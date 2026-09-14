@@ -29,37 +29,3 @@ There is no snippet this time.
 
 3. Render. Then delete the `status:` line and render again. The badge should
    disappear, leaving nothing behind.
-
-## Where to look
-
-The file already contains five conditionals. Any of them is a model —
-`$if(subtitle)$` is the closest.
-
-The syntax reference is
-[Pandoc's template syntax](https://www.pandoc.org/MANUAL.html#template-syntax).
-
-## If you would rather ask
-
-This is a reasonable thing to ask an assistant for. A prompt that works:
-
-> In my Quarto template partial `title-block.html`, show the
-> `brs-release.status` metadata value in a `<span class="report-status">`, but
-> only when it is set. Use Pandoc template syntax, like the `$if(subtitle)$`
-> block already in this file.
-
-Read what it gives you and make sure you can say what each line does. You will
-be asked to change it later.
-
-## Notes
-
-`status` sits under `brs-release:` rather than at the top level, for the reason
-from turn 2. One namespace, one bet.
-
-A conditional tests whether a key has a value. It does not compare values.
-There is no way to write "if the status is Provisional" in a Pandoc template.
-
-## Optional extra, if you finish early
-
-Delete the `region:` line and render. The reference period line now ends in a
-separator with nothing after it. Fix it, so that the separator only shows when
-there is something on both sides of it.

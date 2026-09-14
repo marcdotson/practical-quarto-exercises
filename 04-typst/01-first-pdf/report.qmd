@@ -7,7 +7,8 @@ brs-release:
   period: "Q3 2026"
   region: Oregon
   status: Provisional
-format: html
+format:
+  html: default
 ---
 
 ## Summary

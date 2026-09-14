@@ -21,11 +21,3 @@ Your instructor drives this part. Follow along if you want to.
    ```
 
 4. Render `report.qmd`.
-
-The output does not change. An unedited copy of a partial does the same work as
-the original. This is the safe starting point for every edit that comes next.
-
-> **If nothing changes at all, that can also mean nothing worked.** Quarto gives
-> no error for a partial name it does not recognize. It renders the document and
-> ignores the file. If your later edits have no effect, look at the filename
-> first.

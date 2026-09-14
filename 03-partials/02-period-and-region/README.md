@@ -26,42 +26,4 @@ Nothing shows them yet. The template has never asked for them.
 
 2. Render. The period and the region show below the subtitle.
 
-## Notes
-
-`brs-release` is a name someone invented, and so is everything under it. Quarto has
-no `brs-release` option, so nothing collides.
-
-One nested key is safer than two top-level keys. Every top-level name you invent
-is a bet that Quarto will never claim that name. Nest under one key, and you
-place that bet once instead of once per field.
-
-You are writing HTML here, not Markdown. That is why the separator is the
-character entity `&middot;` and not a typed `·`.
-
-The document now carries two times. Quarto formats `date` for you. It shows
-`brs-release.period` exactly as you wrote it.
-
-## If the output looks wrong
-
-The render will not fail. A partial answer gives you a page that shows you what
-went wrong.
-
-Blanks left alone show as themselves:
-
-```html
-<p class="report-period">______ · ______</p>
-```
-
-A name without its dollar signs is text, not a reference:
-
-```html
-<p class="report-period">brs-release.period · Oregon</p>
-```
-
-One half of that line was substituted and the other half was not. The dollar
-signs are what make Pandoc look the name up.
-
-## To think about
-
-Delete the `region:` line from the YAML and render again. What do you get, and
-what would you rather have?
+3. What happens when you remove `brs-release` from `report.qmd`?
