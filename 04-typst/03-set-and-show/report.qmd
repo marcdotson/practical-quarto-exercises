@@ -8,7 +8,7 @@ brs-release:
   region: Oregon
   status: Provisional
 format:
-  html: default
+  # html: default
   typst:
     keep-typ: true
 ---
@@ -19,6 +19,14 @@ format:
     {{< meta brs-release.status >}}
   ]
 ]
+```
+
+```{=typst}
+#set par(leading: 1.5em)
+```
+
+```{=typst}
+#show heading: set align(center)
 ```
 
 ## Summary

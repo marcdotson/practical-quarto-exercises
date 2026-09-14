@@ -8,8 +8,8 @@ brs-release:
   region: Oregon
   status: Provisional
 format:
-  html: default
   typst: default
+  html: default
 ---
 
 ## Summary
