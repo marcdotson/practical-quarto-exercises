@@ -11,9 +11,9 @@ format: html
 
 ## Summary
 
-Total employment in the region rose by 4,300 jobs over the quarter, an
-increase of 0.4%. The unemployment rate was unchanged at 4.1%. The full method
-is in the [methodology notes](https://example.gov/brs/methods).
+Total employment in the region rose by 4,300 jobs over the quarter, an increase of 0.4%. 
+The unemployment rate was unchanged at 4.1%. 
+The full method is in the [methodology notes](https://example.gov/brs/methods).
 
 ## Industry detail
 
