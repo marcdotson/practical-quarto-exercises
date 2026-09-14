@@ -33,6 +33,7 @@ The plot below shows the relationship between flipper and bill lengths of these 
 #| label: plot-penguins
 #| warning: false
 #| echo: false
+#| fig-alt: "Scatter plot of bill length versus flipper length for Adelie, Chinstrap, and Gentoo penguins. Gentoo penguins have the longest flippers and cluster separately from Adelie and Chinstrap, while Chinstrap penguins tend to have longer bills than Adelie penguins at similar flipper lengths."
 ggplot(penguins, aes(x = flipper_length_mm, y = bill_length_mm)) +
   geom_point(aes(color = species, shape = species)) +
   scale_color_manual(values = c("#FF8C00", "#A020F0", "#008B8B")) +

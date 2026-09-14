@@ -6,6 +6,7 @@ date: 2026-09-14
 brs-release:
   period: "Q3 2026"
   region: Oregon
+masthead: _brand/brs-logo.svg
 format:
   html:
     template-partials:

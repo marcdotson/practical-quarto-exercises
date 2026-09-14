@@ -1,3 +1,70 @@
 /*-- scss:rules --*/
 
 // Your styles go here. Do not edit title-block.html.
+
+#title-block-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid $brand-forest;
+}
+
+.report-masthead {
+  height: 3rem;
+  width: auto;
+  order: 2;
+}
+
+.quarto-title-block .quarto-title {
+  flex: 1 1 auto;
+  order: 1;
+
+  .title {
+    color: $primary;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    color: $text-muted;
+  }
+
+  .report-period {
+    color: $secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .report-status {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 0.25rem;
+    background-color: $brand-forest;
+    color: $background;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .quarto-categories {
+    margin-top: 0.5rem;
+
+    .quarto-category {
+      display: inline-block;
+      margin-right: 0.4rem;
+      padding: 0.1rem 0.5rem;
+      border: 1px solid $secondary;
+      border-radius: 999px;
+      color: $secondary;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+#title-block-header .description {
+  color: $text-muted;
+  font-style: italic;
+}

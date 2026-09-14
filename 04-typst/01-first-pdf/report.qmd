@@ -9,6 +9,7 @@ brs-release:
   status: Provisional
 format:
   html: default
+  typst: default
 ---
 
 ## Summary

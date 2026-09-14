@@ -6,9 +6,15 @@ color:
     slate: "#3D4A54"
     sand: "#EFE9DD"
     ink: "#1F2A2E"
-  foreground: ink
-  background: white
-  primary: forest
+  background:
+    light: white
+    dark: ink
+  foreground:
+    light: ink
+    dark: sand
+  primary:
+    light: forest
+    dark: forest
   secondary: slate
 
 typography:

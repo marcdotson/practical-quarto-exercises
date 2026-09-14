@@ -8,9 +8,12 @@ $if(subtitle)$
 <p class="subtitle lead">$subtitle$</p>
 $endif$
 <p class="report-period">$brs-release.period$ &middot; $brs-release.region$</p>
+$if(brs-release.status)$
+  <span class="report-status">$brs-release.status$</span>
+  $endif$
 $if(categories)$
   $if(quarto-template-params.title-block-categories)$
-<div class="quarto-categories">
+  <div class="quarto-categories">
   $for(categories)$
   <div class="quarto-category">$categories$</div>
   $endfor$
